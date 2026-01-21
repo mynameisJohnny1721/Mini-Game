@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スルーパスゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="main-title">スルーパスゲーム</h1>
+
+    <div id="game-container">
+        <canvas id="gameCanvas" width="864" height="576"></canvas>
+
+        <div id="info-panel">
+            <h2 id="level-title">Level 1</h2>
+
+            <h3>ゲーム概要 (Description)</h3>
+            <p id="level-description">ここにゲームの説明が表示されます。</p>
+
+            <h3>成功の要素と技術 (Factors & Skills)</h3>
+            <ul id="level-factors">
+            </ul>
+
+            <div class="controls-info">
+                <p><strong>操作方法:</strong><br>
+                    クリック: パス<br>
+                    十字キー/数字: パワー調整</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

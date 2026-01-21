@@ -1,0 +1,109 @@
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px #4CAF50, 2px 2px 0 #000;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+    border: 2px solid #fff;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    display: block;
+}
+
+/* 右側の情報パネル */
+#info-panel {
+    width: 320px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 536px;
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #ddd;
+    font-size: 16px;
+    border-left: 4px solid #4CAF50;
+    padding-left: 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 0 10px 0;
+}
+
+ul {
+    padding-left: 20px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.highlight {
+    color: #ffeb3b;
+    font-weight: bold;
+}
+
+.controls-info {
+    margin-top: auto;
+    font-size: 12px;
+    color: #ddd;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+/* ↓↓↓ style.css の一番下に貼り付けてください ↓↓↓ */
+
+/* 操作方法のエリアを強制的に「白」で「太文字」にする */
+#info-panel .controls-info,
+#info-panel .controls-info p,
+#info-panel .controls-info strong {
+    color: #ffffff !important;
+    /* 文字色を白に */
+    font-weight: bold !important;
+    /* 太文字に */
+}
