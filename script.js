@@ -1480,7 +1480,6 @@ function drawOverlay() {
         c.fillStyle = `rgba(0, 255, 127, ${alpha})`;
         c.font = 'bold 28px Arial';
         let startBtnText = "- Click to Start -";
-        if (currentLevel === 0) startBtnText = "- Click to Start Tutorial -";
         c.fillText(startBtnText, CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2 + 120);
 
         drawButton("TIPS", TIPS_BTN_X, TIPS_BTN_Y, TIPS_BTN_W, TIPS_BTN_H, 'info', '20px');
